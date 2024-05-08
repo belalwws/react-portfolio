@@ -1,0 +1,129 @@
+header ul {
+  gap: 16px;
+}
+header ul li a {
+  color: var(--title);
+  opacity: 0.8;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+header ul li a:hover {
+  color: var(--blue);
+  opacity: 1;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+header button {
+  font-size: 1.2 rem;
+}
+header.flex {
+  justify-content: space-between;
+  padding: 0 2.5rem;
+  margin-top: 1.2rem;
+}
+header.flex nav {
+  background-color: var(--headerc);
+  padding: 1rem 2rem;
+  border-radius: 55px;
+  box-shadow: 1px 1px 40px rgba(53, 50, 50, 0.45);
+}
+header .menu {
+  display: none;
+}
+
+/* model popup */
+header .fixed {
+  position: fixed;
+  inset: 0;
+  background-color: var(--headerc);
+  z-index: 11;
+  backdrop-filter: blur(3px);
+}
+@media (max-width: 700px) {
+  header.flex nav {
+    display: none;
+  }
+  header .menu {
+    display: block;
+  }
+}
+header .fixed ul.model {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--secound);
+}
+header .fixed ul.model li {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.77rem;
+  padding-top: 0.5rem;
+}
+header .fixed ul.model li:last-child {
+  border-bottom: none;
+}
+header .fixed ul.model li a {
+  font-size: 1.2rem;
+}
+header .fixed ul.model li:first-child {
+  text-align: right;
+  border-bottom: none;
+  padding-bottom: 0;
+  padding-top: 0.2rem;
+}
+@keyframes nicemove {
+  0% {
+    scale: 0;
+  }
+  60% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+header .fixed ul.model {
+  animation: nicemove 0.6s;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--secound);
+}
+
+header button.mode,
+header .icon-menu {
+  background-color: var(--headerc);
+  height: 2rem;
+  width: 2rem;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  color: #8f8b8b;
+  border: 1px solid rgba(250, 128, 114, 0.321);
+  transition: 0.2s;
+}
+header button.mode:hover,
+header .icon-menu:hover {
+  color: white;
+  border: 1px solid rgb(250, 128, 114);
+}
+
+header .icon-close {
+  font-size: 1.5rem;
+  color: #8f8b8b;
+  transition: 0.3s;
+}
+header .icon-close:hover {
+  font-size: 1.7rem;
+  color: #cdc9c9;
+  rotate: 180deg;
+}
+
+header .icon-sun {
+  color: orange;
+}

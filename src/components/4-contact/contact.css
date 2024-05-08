@@ -1,0 +1,96 @@
+section.Contact-us .icon-envelope-o {
+  font-size: 1.8rem;
+  color: var(--subtitle);
+  margin-right: 1.8rem;
+}
+section.Contact-us .title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--title);
+}
+
+section.Contact-us p.subtitle {
+  color: var(--subtitle);
+  line-height: 1.6rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+section.Contact-us label {
+  color: var(--subtitle);
+}
+section.Contact-us #email,
+section.Contact-us #message {
+  all: unset;
+  border-color: rgba(63, 63, 70, 0.15);
+  border: 1px solid rgb(63, 63, 70);
+  width: 16rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 1.1rem;
+  margin-left: 1rem;
+}
+section.Contact-us #email:focus,
+section.Contact-us #message:focus {
+  border-color: var(--blue);
+}
+section.Contact-us #email:hover,
+section.Contact-us #message:hover {
+  border-color: var(--blue);
+}
+section.Contact-us #message {
+  min-height: 13rem;
+  resize: vertical;
+}
+section.Contact-us .submit {
+  all: unset;
+  background-color: rgba(36, 37, 46, 1);
+  padding: 0.75rem 1.9rem;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.5;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 1.8rem;
+  border: 1px solid rgb(63, 63, 70);
+}
+section.Contact-us .submit:hover {
+  scale: 0.97;
+}
+
+@media (max-width: 600px) {
+  section.Contact-us form {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+  }
+  section.Contact-us form div.flex {
+    flex-direction: column;
+    align-items: start;
+  }
+  section.Contact-us #email,
+  section.Contact-us #message {
+    width: 100%;
+    padding: 0.8rem 0;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+  section.Contact-us .submit {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+}
+.light section.Contact-us #email,
+.light section.Contact-us #message {
+  background-color: white;
+  color: #000;
+}
+
+@media (max-width: 1100px) {
+  section.Contact-us .conactanimation {
+    display: none;
+  }
+}
